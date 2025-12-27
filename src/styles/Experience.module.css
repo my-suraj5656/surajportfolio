@@ -377,6 +377,18 @@
 }
 
 @media (max-width: 1024px) {
+  .experience {
+    padding: 100px 16px;
+  }
+
+  .sectionTitle {
+    font-size: clamp(32px, 4vw, 48px);
+  }
+
+  .sectionDescription {
+    font-size: 16px;
+  }
+
   .timeline::before {
     left: 20px;
   }
@@ -387,23 +399,368 @@
 
   .timelineItem {
     padding-left: 70px;
+    margin-bottom: 50px;
+  }
+
+  .experienceCard {
+    padding: 24px;
+  }
+
+  .experienceRole {
+    font-size: 20px;
+  }
+
+  .experienceCompany {
+    font-size: 16px;
+  }
+
+  .carouselContainer {
+    gap: 12px;
+  }
+
+  .carouselButton {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .miniProject {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .miniProjectLinks {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .projectButton {
+    padding: 7px 12px;
+    font-size: 11px;
   }
 }
 
 @media (max-width: 768px) {
   .experience {
-    padding: 80px 24px;
+    padding: 80px 16px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 60px;
+  }
+
+  .sectionTitle {
+    font-size: clamp(28px, 3.5vw, 40px);
+  }
+
+  .sectionDescription {
+    font-size: 15px;
   }
 
   .timeline::before {
-    left: 20px;
+    left: 16px;
   }
 
   .timelineDot {
-    left: 8px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
   }
 
   .timelineItem {
-    padding-left: 70px;
+    padding-left: 60px;
+    margin-bottom: 40px;
+  }
+
+  .experienceCard {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .experienceCard:hover {
+    transform: translateX(4px);
+  }
+
+  .experienceHeader {
+    margin-bottom: 16px;
+  }
+
+  .experienceRole {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .experienceCompany {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .experienceMeta {
+    gap: 16px;
+  }
+
+  .metaItem {
+    font-size: 12px;
+  }
+
+  .experienceList li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding-left: 28px;
+  }
+
+  .projectsTitle {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .projectCounter {
+    font-size: 11px;
+    margin-left: 6px;
+  }
+
+  .carouselContainer {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .carouselButton {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .miniProject {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .miniProjectName {
+    font-size: 14px;
+  }
+
+  .miniProjectDesc {
+    font-size: 12px;
+  }
+
+  .miniProjectTech span {
+    padding: 3px 8px;
+    font-size: 10px;
+  }
+
+  .miniProjectLinks {
+    gap: 8px;
+    width: 100%;
+  }
+
+  .projectButton {
+    padding: 6px 10px;
+    font-size: 10px;
+    gap: 4px;
+  }
+
+  .carouselDots {
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .activeDot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 60px 12px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 40px;
+  }
+
+  .sectionTag {
+    padding: 6px 16px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .sectionTitle {
+    font-size: clamp(24px, 5vw, 32px);
+    margin-bottom: 12px;
+  }
+
+  .sectionDescription {
+    font-size: 14px;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timelineDot {
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .timelineItem {
+    padding-left: 50px;
+    margin-bottom: 30px;
+  }
+
+  .experienceCard {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .experienceCard:hover {
+    transform: translateX(2px);
+  }
+
+  .experienceRole {
+    font-size: 16px;
+  }
+
+  .experienceCompany {
+    font-size: 13px;
+  }
+
+  .experienceMeta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .metaItem {
+    font-size: 11px;
+  }
+
+  .experienceList {
+    margin-bottom: 12px;
+  }
+
+  .experienceList li {
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+  }
+
+  .experienceList li::before {
+    font-size: 14px;
+  }
+
+  .experienceProjects {
+    margin-top: 16px;
+    padding-top: 16px;
+  }
+
+  .projectsTitle {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .projectCounter {
+    font-size: 10px;
+    margin-left: 4px;
+  }
+
+  .carouselContainer {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .carouselButton {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    align-self: center;
+  }
+
+  .prevButton,
+  .nextButton {
+    order: unset;
+  }
+
+  .nextButton {
+    margin-top: 8px;
+  }
+
+  .miniProjects {
+    width: 100%;
+  }
+
+  .miniProject {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .miniProjectName {
+    font-size: 13px;
+  }
+
+  .miniProjectDesc {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .miniProjectTech {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+
+  .miniProjectTech span {
+    padding: 2px 6px;
+    font-size: 9px;
+  }
+
+  .miniProjectLinks {
+    gap: 6px;
+    width: 100%;
+  }
+
+  .projectButton {
+    padding: 5px 8px;
+    font-size: 9px;
+    gap: 3px;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .demoButton,
+  .codeButton {
+    border-radius: 6px;
+  }
+
+  .projectButton:hover {
+    transform: none;
+  }
+
+  .projectButton:active {
+    transform: scale(0.95);
+  }
+
+  .carouselDots {
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .activeDot {
+    width: 8px;
+    height: 8px;
   }
 }
